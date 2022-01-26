@@ -1,1 +1,1 @@
-# churchnamegenerator
+# Church Name Generator
