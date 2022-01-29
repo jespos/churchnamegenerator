@@ -13,10 +13,11 @@ body{
   --color-grey: #FAFAFA;
   --color-white: #F2F2F2;
   /* --color-accent: #04CDCE; */
-  --color-button: #D6BA6B;
+  --color-button: #FFC646;
 
   font-family: var(--font-text);
-  background: radial-gradient(#193F81, #08194D);
+  background: rgb(28,110,193);
+  background: radial-gradient(circle, rgba(28,110,193,1) 0%, rgba(8,25,77,1) 100%);
   color: var(--color-white);
 }
 
@@ -92,19 +93,42 @@ main{
 }
 
 .dynamic-element{
-  background-color: #FBF1D8;
-  border-radius: 5px;
-  /* box-shadow: 4px 8px 10px #D8D8D8; */
-  padding: 100px;
-  font-size: 1.7em;
+  border: 2px solid #FFC646;
+  padding: 70px;
+  position: relative;
+  font-size: 2.5em;
   font-family: serif;
-  color: darkred;
+  color: #E1E5EE;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1%;
   text-align: center;
   width: 45%;
 }
+
+.dynamic-element:before {
+  content: " ";
+  position: absolute;
+  z-index: -1; /*do I need this?*/
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid #FFC646;
+  &:before, &:after {
+    content: "•";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: $color-alpha;
+    border: 2px solid $color-alpha;
+    line-height: 12px;
+    bottom: -2px;
+    text-align: center;
+  }
+}
+
 
 .dynamic-element ul{
   list-style:none;
