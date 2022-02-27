@@ -2,8 +2,8 @@ var hello = 4;
 
 var myData = {
 
-  "firstList": ['Diety', 'Zion', 'Father', 'Blessed', 'Glory', 'Lord', 'Saint', 'Our Lady'],
-  "lastList": ['Dog', 'Cat', 'Rabbit', 'Lizard', 'Mouse', 'Hamster', 'Tiger', 'Horse'],
+  "firstList": ['The Church of', 'Temple of', 'Mount Tabernacle', 'Doors of the', 'Our Lady of'],
+  "lastList": ['Diety', 'Zion', 'Father', 'Glory', 'Lord', 'Saint', 'Our Lady'],
   "maxEntries": 20, // maxEntries is used by the sample code in "renderListComponent", try changing this value, refreshing the page, and clicking "Show List" again
   "examples":{ 
     "name": "The contents of myData need to follow JSON syntax",

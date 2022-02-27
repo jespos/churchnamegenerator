@@ -16,8 +16,7 @@ body{
   --color-button: #FFC646;
 
   font-family: var(--font-text);
-  background: rgb(28,110,193);
-  background: radial-gradient(circle, rgba(28,110,193,1) 0%, rgba(8,25,77,1) 100%);
+  background: radial-gradient(circle, rgb(17, 87, 156) 0%, rgba(8,25,77,1) 100%);
   color: var(--color-white);
 }
 
@@ -39,7 +38,7 @@ button{
 
 
 button:hover {
-  background-color: #caae61;
+  background-color: #ffcb58;
   font-size: 1.2em;
   transition: font-size .1s;
 
@@ -49,6 +48,7 @@ button:hover {
 button:active {
   transform: scale(0.98);
   box-shadow: 0px 7px 13px #182B48;
+  background-color: #e5b23f;
 }
 
 .church-button-container{
@@ -90,6 +90,8 @@ header button{
 
 main{
   padding:10px;
+  /* background-image: url('../images/crosses.png');
+  background-position: bottom; */
 }
 
 .dynamic-element{
